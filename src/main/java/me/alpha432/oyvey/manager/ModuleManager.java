@@ -18,6 +18,9 @@ import me.alpha432.oyvey.features.modules.player.Velocity;
 import me.alpha432.oyvey.features.modules.render.BlockHighlight;
 import me.alpha432.oyvey.util.traits.Jsonable;
 import me.alpha432.oyvey.util.traits.Util;
+import me.alpha432.oyvey.features.modules.render.PlayerESP;
+import me.alpha432.oyvey.features.modules.render.ItemESP;
+import me.alpha432.oyvey.features.modules.render.ChestESP;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,6 +44,9 @@ public class ModuleManager implements Jsonable, Util {
         modules.add(new Velocity());
         modules.add(new BlockHighlight());
         modules.add(new NoFall());
+        modules.add(new PlayerESP());
+        modules.add(new ItemESP());
+        modules.add(new ChestESP());
     }
 
     public Module getModuleByName(String name) {
